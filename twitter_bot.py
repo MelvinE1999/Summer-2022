@@ -18,3 +18,10 @@ api = tweepy.API(auth)
 #Step 3 - Retrieve Tweets
 public_tweets = api.search('Trump')
 
+for tweet in public_tweets:
+    print(tweet.text)
+    
+    #Step 4 Perform Sentiment Analysis on Tweets
+    analysis = TextBlob(tweet.text)
+    print(analysis.sentiment)
+    print("")
