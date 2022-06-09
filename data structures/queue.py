@@ -1,9 +1,9 @@
 # FIFO (First In First Out)
 
-class QueueOverflowError:
+class QueueOverflowError(BaseException):
     pass
 
-class QueueUnderflowError:
+class QueueUnderflowError(BaseException):
     pass
 
 class queue:

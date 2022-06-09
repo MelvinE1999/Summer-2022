@@ -2,13 +2,13 @@
 # follows by priority
 # uses a two priority system
 
-class QueueOverflowError:
+class QueueOverflowError(BaseException):
     pass
 
-class QueueUnderflowError:
+class QueueUnderflowError(BaseException):
     pass
 
-class InvalidPriorityNumber:
+class InvalidPriorityNumber(BaseException):
     pass
 
 class queue:
